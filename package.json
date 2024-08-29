@@ -1,0 +1,32 @@
+{
+  "name": "marthatiahahu",
+  "version": "1.0.0",
+  "description": "saucelab automation testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "dependencies": {
+    "library": "file:library",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "cypress": "11.2.0",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fahdilahady/marthaTiahahu.git"
+  },
+  "keywords": [
+    "saucedemo.com"
+  ],
+  "author": "FAH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fahdilahady/marthaTiahahu/issues"
+  },
+  "homepage": "https://github.com/fahdilahady/marthaTiahahu#readme"
+}
