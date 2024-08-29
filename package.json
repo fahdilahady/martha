@@ -5,17 +5,26 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "test:run": "cypress run --e2e --browser chrome"
+    "test:run": "cypress run --e2e --browser chrome",
+    "lint": "eslint --color --ext .ts,.js ./"
   },
   "dependencies": {
     "library": "file:library",
     "typescript": "^4.4.4"
   },
   "devDependencies": {
+    "@types/node": "^16.11.7",
     "@types/mocha": "^10.0.7",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
     "cypress": "11.2.0",
     "eslint": "^8.16.0",
-    "eslint-config-airbnb-base": "^15.0.0"
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-file-progress": "^1.2.0",
+    "eslint-plugin-import": "^2.26.0"
   },
   "repository": {
     "type": "git",
