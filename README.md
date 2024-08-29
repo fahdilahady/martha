@@ -19,11 +19,25 @@ Versions used:
     nvm install 18.12.0
     ```
 
-3. Clone This Project or Unzip
+3. [Clone This Project or Unzip](https://github.com/fahdilahady/marthaTiahahu.git)
 
 4. Then in this projects root install all dependency packages by run below command
 
     ```sh
     npm install
+    ```
+    
+## Run Test
+
+in the terminal, go to this project directory and run below npmc command
+
+1. To Open Cypress IDE
+    ```sh
+    npm run test
+    ```
+
+2. To Run whole test scenario
+    ```sh
+    npm run test:run
     ```
 

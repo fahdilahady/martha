@@ -4,7 +4,8 @@
   "description": "saucelab automation testing",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "test:run": "cypress run --e2e --browser chrome"
   },
   "dependencies": {
     "library": "file:library",
