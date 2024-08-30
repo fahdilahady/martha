@@ -5,7 +5,7 @@ import loginPage from 'library/pages/saucedemo/login.page';
 
 const chart: Partial<iItem>[] = [];
 
-describe('add item to chart', () => {
+describe('add item to chart and check about page', () => {
   it('add 1 item to cart and verify that item is added to cart', () => {
     cy.visit('/');
     loginPage.login('standard_user');
@@ -13,7 +13,6 @@ describe('add item to chart', () => {
     inventoryPage.addItemToCart('Sauce Labs Backpack').then((price) => {
       const item: iItem = { name: 'Sauce Labs Backpack', price, currency: '$' };
       chart.push(item);
-      cy.log(JSON.stringify(chart));
 
       inventoryPage.chartBadge().should('have.text', '1');
       inventoryPage.chartLink().click();
