@@ -27,5 +27,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          user_name: 'fahdilahady'
+          user_name: 'Fahdil Ahady Hazain'
           user_email: 'hazain.ahady@gmail.com'
