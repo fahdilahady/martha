@@ -3,7 +3,7 @@ name: Code Review
 on:
   push:
     branches-ignore:
-      - main
+      - master
 jobs:
   code-review:
     runs-on: ubuntu-22.04
