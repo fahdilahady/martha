@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 // ***********************************************************
 // This example support/e2e.js is processed and
 // loaded automatically before your test files.
@@ -15,6 +16,16 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands';
+import addContext from 'mochawesome/addContext';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+Cypress.on('test:after:run', (test, runnable) => {
+  let videoName = Cypress.spec.name;
+  videoName = videoName.replace('/.js.*', '.js');
+  const videoUrl = `videos/${videoName}.mp4`;
+
+  addContext({ test }, videoUrl);
+});

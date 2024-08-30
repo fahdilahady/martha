@@ -5,6 +5,10 @@ import { defineConfig } from 'cypress';
 export default defineConfig({
   e2e: {
     baseUrl: 'https://www.saucedemo.com/',
+    reporter: 'cypress-multi-reporters',
+    reporterOptions: {
+      configFile: 'reporter-config.json',
+    },
 
     watchForFileChanges: false,
 

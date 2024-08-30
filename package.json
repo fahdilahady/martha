@@ -6,25 +6,32 @@
   "scripts": {
     "test": "cypress open",
     "test:run": "cypress run --e2e --browser chrome",
-    "lint": "eslint --color --ext .ts,.js ./"
+    "lint": "eslint --color --ext .ts,.js ./",
+    "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json",
+    "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   },
   "dependencies": {
     "library": "file:library",
     "typescript": "^4.4.4"
   },
   "devDependencies": {
-    "@types/node": "^16.11.7",
     "@types/mocha": "^10.0.7",
+    "@types/node": "^16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
     "cypress": "11.2.0",
+    "cypress-multi-reporters": "^1.6.4",
     "eslint": "^8.16.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-plugin-chai-friendly": "^0.7.2",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-file-progress": "^1.2.0",
-    "eslint-plugin-import": "^2.26.0"
+    "eslint-plugin-import": "^2.26.0",
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
   },
   "repository": {
     "type": "git",
