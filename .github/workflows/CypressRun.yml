@@ -1,0 +1,14 @@
+name: E2E Runner
+on: 
+  push:
+    branches: [ "main" ]
+jobs:
+  code-review:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Use Cypress env
+        uses: cypress-io/github-action@v6
