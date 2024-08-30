@@ -9,6 +9,8 @@ export default defineConfig({
     reporterOptions: {
       configFile: 'reporter-config.json',
     },
+    // testIsolation: 'off',
+    chromeWebSecurity: false,
 
     watchForFileChanges: false,
 

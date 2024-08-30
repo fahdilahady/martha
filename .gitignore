@@ -4,5 +4,4 @@ node_modules
 !.eslintignore
 *.log
 /out
-**/tmp/*.*
-orderedSpecFiles**
+cypress/downloads

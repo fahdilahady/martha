@@ -4,8 +4,8 @@
   "description": "saucelab automation testing",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open",
-    "test:run": "cypress run --e2e --browser chrome",
+    "test": "cypress open --e2e --browser electron",
+    "test:run": "cypress run --e2e --browser electron",
     "lint": "eslint --color --ext .ts,.js ./",
     "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json",
     "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
