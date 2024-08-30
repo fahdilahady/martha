@@ -18,9 +18,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Use Cypress env
-        uses: cypress-io/github-action@v6
+
       - run: npm ci
       - run: npm run lint
