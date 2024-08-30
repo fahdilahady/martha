@@ -5,6 +5,8 @@ on:
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
+    permissions:
+      contents: write  # Ensure the token has write permissions
     steps:
       - name: Checkout
         uses: actions/checkout@v4
