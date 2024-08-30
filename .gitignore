@@ -1,8 +1,0 @@
-node_modules
-**/videos
-!.eslintrc.json
-!.eslintignore
-*.log
-/out
-**/tmp/*.*
-orderedSpecFiles**
