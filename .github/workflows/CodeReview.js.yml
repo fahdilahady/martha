@@ -5,13 +5,8 @@ name: Code Review
 
 on:
   push:
-    branches:    
-      - '*'         # matches every branch that doesn't contain a '/'
-      - '*/*'       # matches every branch containing a single '/'
-      - '**'        # matches every branch
-      - '!master'   # excludes master
-
-
+    branches-ignore:
+      - master
 jobs:
   code-review:
     runs-on: ubuntu-22.04
