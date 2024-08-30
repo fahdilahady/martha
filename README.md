@@ -1,4 +1,4 @@
-# marthaTiahahu SauceLabAutTesting
+# SauceLabAutTesting
 
 ## Project setup
 [![Cypress](https://www.cypress.io/_astro/navbar-brand.D87396b0.svg)](https://www.cypress.io/)
